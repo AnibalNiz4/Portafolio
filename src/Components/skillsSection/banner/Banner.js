@@ -90,7 +90,7 @@ export default function Banner(){
                 <ContainerInfo>
                     <H1name>Anibal Niz</H1name>
                     <Pinfo><i>Desarrollador front-end</i></Pinfo>
-                    <a href='./pdf' target='_blank'><Button text='Descargar CV'></Button></a>
+                    <a href='./CvAnibalNiz.pdf' target='_blank'><Button text='Descargar CV'></Button></a>
                 </ContainerInfo>
                 <ContainerIcons>
                     <a href='https://github.com/AnibalNiz4' target='_blank' ><IconImg src={GitHub}/></a>

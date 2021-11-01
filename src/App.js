@@ -6,7 +6,6 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Pdf from './Components/skillsSection/pdf/Pdf';
 import Footer from './Components/skillsSection/footer/Footer';
 import Projects from './Components/skillsSection/projectsSection/Projects';
 import Contact from './Components/skillsSection/contact/Contact';
@@ -23,9 +22,6 @@ function App() {
           <Projects/>
           <Contact/>
           <Footer/>
-        </Route>
-        <Route exact path='/pdf'>
-          <Pdf></Pdf>
         </Route>
       </Switch>
     </Router>
