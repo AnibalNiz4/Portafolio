@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import ReactLogo from './Components/skillsSection/ReactLogo';
+import Banner from './Components/skillsSection/banner/Banner';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Pdf from './Components/skillsSection/pdf/Pdf';
+import Footer from './Components/skillsSection/footer/Footer';
+import Projects from './Components/skillsSection/projectsSection/Projects';
+import Contact from './Components/skillsSection/contact/Contact';
+import NavResponsive from './Components/skillsSection/navResponsive/NavResponsive';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+          <NavResponsive/>
+          <Banner/>
+          <ReactLogo/>
+          <Projects/>
+          <Contact/>
+          <Footer/>
+        </Route>
+        <Route exact path='/pdf'>
+          <Pdf></Pdf>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

@@ -1,0 +1,47 @@
+.NavResponsiveContainer{
+    position: fixed;
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    height: 100%;
+    width: 100%;
+    z-index: 111;
+    top: -100%;
+    transition: all .2s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 800px){
+    .NavResponsiveContainer{
+        display: none;
+    }
+}
+
+.active{
+    top: 0;
+}
+
+.SpanHamburger{
+    width: 35px;
+    height: 3px;
+    background: #1C1D25;
+}
+
+.white:first-child {
+    background: #ebebeb;
+    transform: rotate(45deg);
+    transform-origin: 25%;
+}
+
+.white:nth-child(2) {
+    display: none;
+}
+
+.white:last-child {
+    background: #ebebeb;
+    transform: rotate(-45deg);
+    transform-origin: 40%;
+    position: absolute;
+    top: 9px;
+    left: -2px;
+}
