@@ -28,6 +28,7 @@ export default function Contact(){
 
         @media (max-width: 1000px){
             flex-direction: column;
+            height: 1000px;
         }
     `;
 
